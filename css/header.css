@@ -1,0 +1,31 @@
+#logo {
+    position: relative;
+    width: 115px;
+    height: auto;
+}
+
+.navbar-brand {
+    margin-left: 100px;
+}
+
+#top-bar {
+    background-color: black;
+    padding: 10px;
+}
+
+.navbar {
+    background-color: #f5f7e4 !important;
+}
+
+.navbar li a {
+    font-weight: 500;
+    padding-left: 15px !important;
+}
+
+.navbar li a:hover {
+    color: #0a081b !important;
+}
+
+.dropdown-menu {
+    background-color: #f5f7e4;
+}
