@@ -1,6 +1,6 @@
 #footer {
     background-color: #000;
-    min-height: 50px;
+    max-height: 50px !important;
 }
 
 #copyright {

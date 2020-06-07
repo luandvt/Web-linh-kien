@@ -1,4 +1,8 @@
 <head> <link rel="stylesheet" href="../css/footer.css" type="text/css" /> </head>
+
+<div class="container" id="line">
+    <hr />
+</div>
 <footer class="container-fuild" id="footer">
     <div class="row">
         <div class="col-xs-6 col-md-6" id="copyright"> Bản quyền thuộc về 000 - Copyright &#169; by <b><u>000</u></b></div>

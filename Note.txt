@@ -1,3 +1,4 @@
 // Có ghi chú, chỉnh sửa ghi hết vô đây để theo dõi tiến độ nha
 // 10:45 23/05/2020 Up folder bootstrap. (bootrap 4);
 // 18:15 25/05.2020 Các trang code html tạo 1 file note về đặt tên ID và class, CSS để khi đồng bộ các file đặt lại 1 lượt cho dễ nhé. Cứ đặt theo tên mình dễ nhớ để code, khi nào nối các trang sẽ đặt tên lại cùng 1 lúc! 
+//Test new git file
