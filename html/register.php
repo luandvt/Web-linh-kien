@@ -15,13 +15,21 @@
                 <img src="../img/login/login.png" alt="IMG">
             </div>
 
-            <form class="login100-form validate-form">
+            <form class="login100-form validate-form" action="./processreg.php" method="POST">
                 <span class="login100-form-title">
                     Sign Up Now
                 </span>
 
                 <div class="wrap-input100 validate-input" >
-                    <input class="input100" type="text" name="email" placeholder="Email">
+                    <input class="input100" type="text" name="name" placeholder="Your name" required>
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="wrap-input100 validate-input" >
+                    <input class="input100" type="text" name="email" placeholder="Email" required>
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -29,7 +37,15 @@
                 </div>
 
                 <div class="wrap-input100 validate-input" >
-                    <input class="input100" type="password" name="pass" placeholder="Password">
+                    <input class="input100" type="text" name="phonenum" placeholder="Your phone number" required>
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="wrap-input100 validate-input" >
+                    <input class="input100" type="password" name="pass" placeholder="Password" required>
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
                         <i class="fa fa-lock" aria-hidden="true"></i>
@@ -37,7 +53,7 @@
                 </div>
 
                 <div class="wrap-input100 validate-input" >
-                    <input class="input100" type="password" name="pass" placeholder="RePassword">
+                    <input class="input100" type="password" name="repass" placeholder="RePassword" required>
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
                         <i class="fa fa-lock" aria-hidden="true"></i>
@@ -70,16 +86,6 @@
     </div>
 </div>
 <?php require "footer.php"; ?>
-
-<!--===============================================================================================-->
 <script src="../bootstrap/js/popper.js"></script>    
 <script src="../jQuery/select2.min.js"></script>
-<!-- <script src="../jQuery/login/tilt.jquery.min.js"></script> -->
-<!-- <script>
-    $('.js-tilt').tilt({
-        scale: 1.1
-    })
-</script>
-<script src="../jQuery/login/login.js"></script> -->
-<!--================================================================================================-->   
 </body>

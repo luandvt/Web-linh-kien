@@ -1,0 +1,19 @@
+                    <tbody>
+                    <?php foreach($list_cart as $oneproduct){?>
+                        <tr>
+                            <td><img class="item-cart" src="<?php echo($oneproduct[image]); ?>" /> </td>
+                            <td><?php echo($oneproduct[name]); ?></td>
+                            <td>Còn hàng</td>
+                            <td><input class="form-control" type="number" value="1" /></td>
+                            <td class="text-right"><?php echo($oneproduct[price]); ?></td>
+                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button></td>
+                        </tr>
+                        <?php}?>
+                    </tbody>
+
+<?php foreach($list_cart as $oneproduct){
+    echo($oneproduct['name']);
+    echo("-");
+    echo($oneproduct['price']);
+}
+?>

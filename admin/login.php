@@ -51,7 +51,10 @@ include_once("../database/connect.php");
 $user = @$_REQUEST["adminName"];
 $pass = @$_REQUEST["adminPw"];
 
-  session_start();
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+}
 
   $sql = "SELECT name, password FROM users WHERE typeUsers='1001' or typeUsers='1002'";
 

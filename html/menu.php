@@ -15,8 +15,8 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <!-- Form search -->
-                        <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <form class="form-inline" method="POST" action="./cusproduct.php">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="fsearch">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                 <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
@@ -33,26 +33,24 @@
                         Danh mục sản phẩm
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="product-xs-menu">
-                            <a href="../html/product.php" class="dropdown-item ">Tất cả sản phẩm</a>
-                            <a href="show-all.php" class="dropdown-item ">Mainboard</a>
-                            <a href="show-all.php" class="dropdown-item ">Bộ xử lý (CPU)</a>
-                            <a href="show-all.php" class="dropdown-item ">Ram, Ổ cứng</a>
-                            <a href="show-all.php" class="dropdown-item ">Nguồn, Case</a>
-                            <a href="show-all.php" class="dropdown-item ">Card màn hình (GPU)</a>
-                            <a href="show-all.php" class="dropdown-item ">Linh kiện khác</a>
+                            <a href="cusproduct.php?type=all" class="dropdown-item ">Tất cả sản phẩm</a>
+                            <a href="cusproduct.php?type=mainboard" class="dropdown-item ">Mainboard</a>
+                            <a href="cusproduct.php?type=cpu" class="dropdown-item ">Bộ xử lý (CPU)</a>
+                            <a href="cusproduct.php?type=ram" class="dropdown-item ">Ram</a>
+                            <a href="cusproduct.php?type=harđrive" class="dropdown-item ">Ổ cứng</a>
+                            <a href="cusproduct.php?type=psu" class="dropdown-item ">Nguồn</a>
+                            <a href="cusproduct.php?type=case" class="dropdown-item ">Case</a>
+                            <a href="cusproduct.php?type=gpu" class="dropdown-item ">Card màn hình (GPU)</a>
+                            <a href="cusproduct.php?type=another" class="dropdown-item ">Linh kiện khác</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../html/cart.php">Giỏ hàng </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Tài khoản
-          </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="../html/login.php">Đăng nhập</a>
-                            <a class="dropdown-item" href="../html/register.php">Đăng ký</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./check-account.php">
+                            Tài khoản
+                        </a>
                     </li>
                 </ul>
             </div>

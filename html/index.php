@@ -1,3 +1,3 @@
 <?php
-    require "home.php";
+    include_once "home.php";
 ?>

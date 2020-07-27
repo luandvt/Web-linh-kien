@@ -1,5 +1,8 @@
-<?php 
-    session_start();
-    unset($_SESSION["username"]);
-    header("Location: login.php");
+<?php
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
+    unset($_SESSION["user"]);
+    header("Location: home.php");
 ?>

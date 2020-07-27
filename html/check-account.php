@@ -2,11 +2,15 @@
     if(!isset($_SESSION)) 
     { 
         session_start(); 
-    }
+    } 
     if(!isset($_SESSION["user"]))
     {
         header("Location: account.php");
     }
-    echo('this is profile!');
+    if(isset($_SESSION["user"]))
+    {
+        echo('hello '.$_SESSION["user"]);
+        header("Location: profile.php");
+    }
+    
 ?>
-<form  action="./logout.php"><button type="submit">Logout</button></form>
